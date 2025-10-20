@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0ee0c86dac5512f40a5c118571d81117
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Shaders/UCLA GameLab Double-Sided Wireframe.shader
+  uploadId: 624589

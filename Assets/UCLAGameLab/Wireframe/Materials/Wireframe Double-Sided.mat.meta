@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 097b51d400f87c24193f3686d4e2478f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Materials/Wireframe Double-Sided.mat
+  uploadId: 624589

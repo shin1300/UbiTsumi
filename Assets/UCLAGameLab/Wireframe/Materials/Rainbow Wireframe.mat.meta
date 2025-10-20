@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 150603c95ae82bb4a9364677de3f13c1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Materials/Rainbow Wireframe.mat
+  uploadId: 624589

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c01d0306d0fd354c90ea755d194993e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Materials/Wireframe Cutout.mat
+  uploadId: 624589

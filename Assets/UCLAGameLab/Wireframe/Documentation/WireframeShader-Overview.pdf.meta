@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 76ceaaeccce0ba24fab73809156cb586
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Documentation/WireframeShader-Overview.pdf
+  uploadId: 624589
