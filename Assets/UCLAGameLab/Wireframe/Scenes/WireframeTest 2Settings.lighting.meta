@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 030aa87acbb9b84428297f76cc98349a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Scenes/WireframeTest 2Settings.lighting
+  uploadId: 624589

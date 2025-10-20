@@ -1,0 +1,80 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Aa]rtifacts/
+
+# User-specific
+[Uu]ser[Ss]ettings/
+.vs/
+.idea/
+.vscode/
+*.user
+*.userprefs
+
+# IDE/Generated
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity Asset Store tools
+[Aa]ssets/AssetStoreTools*
+
+# Unity crash reports
+sysinfo.txt
+
+# TextMesh Pro auto-generated
+[Aa]ssets/TextMesh Pro/*/Resources/*
+!Assets/TextMesh Pro/Resources/*.asset
+
+# Addressables
+[Aa]ssets/AddressableAssetsData/*/*.bin*
+[Aa]ssets/StreamingAssets/aa/
+
+# Gradle/Android
+[Gg]radle/
+*.gradle
+*.apk
+*.aab
+
+# iOS/Xcode
+DerivedData/
+*.xcworkspace
+*.xcodeproj
+*.pbxproj
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Unity Collaborate
+*.collabignore
+
+# Crashlytics/Firebase
+crashlytics-build.properties
+fabric.properties
+
+# Logs
+*.log
+
+# Packages: keep manifest and lockfile tracked
+!Packages/manifest.json
+!Packages/packages-lock.json
+

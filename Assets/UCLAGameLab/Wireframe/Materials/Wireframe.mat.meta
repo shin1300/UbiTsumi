@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 019466160e4e2f7409f1e582431bf409
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21897
+  packageName: UCLA Wireframe Shader
+  packageVersion: .21
+  assetPath: Assets/UCLAGameLab/Wireframe/Materials/Wireframe.mat
+  uploadId: 624589
