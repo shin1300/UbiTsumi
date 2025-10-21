@@ -9,3 +9,5 @@
 - [ ] Docs updated if needed (README/notes)
 - [ ] Scenes open and run (Home/Game)
 - [ ] No large binaries committed outside LFS (glb/fbx/mp3/ogg/mp4)
+## Linked Issues
+- Closes #<issue-number>

@@ -16,8 +16,11 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-                        const pr = context.payload.pull_request;
-            if (!pr) core.setFailed('No pull_request in context');
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              core.setFailed('No pull_request in context');
+              return;
+            }
 
             const labels = (pr.labels || []).map(l => l.name);
             const hasType = labels.some(n => n.startsWith('type:'));
@@ -27,8 +30,9 @@ jobs:
             const head = pr.head.ref;
 
             let errors = [];
-            if (!hasType) errors.push('Missing label: type:*');
-            if (!hasPriority) errors.push('Missing label: priority:*');
+            // 表記は好みで統一（type: / type:* どちらでも可）
+            if (!hasType) errors.push('Missing label: type:');
+            if (!hasPriority) errors.push('Missing label: priority:');
             if (!ms) errors.push('Missing milestone');
 
             // Enforce branching policy
@@ -48,4 +52,3 @@ jobs:
             } else {
               console.log('PR checks passed');
             }
-
