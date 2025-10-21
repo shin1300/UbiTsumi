@@ -28,6 +28,12 @@ jobs:
             const head = pr.head.ref;
 
             let errors = [];
+            // Require closing keywords to auto-link issues
+            const body = pr.body || '';
+            const closesRe = /(close[sd]?|fix(e[sd])?|resolve[sd]?)\s+#\d+/i;
+            if (!closesRe.test(body)) {
+              errors.push('Missing closing keyword like "Closes #<n>" in PR body');
+            }
             if (!hasType) errors.push('Missing label: type:*');
             if (!hasPriority) errors.push('Missing label: priority:*');
             if (!ms) errors.push('Missing milestone');
