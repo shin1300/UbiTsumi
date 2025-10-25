@@ -1,4 +1,5 @@
 // ファイル名: GameManager.cs
+// ゲーム進行の中枢。生成・操作・ドロップ判定・カメラ切替・モデル読込を管理。
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
