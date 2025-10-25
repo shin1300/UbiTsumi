@@ -9,6 +9,9 @@
 [Rr]ecordings/
 [Aa]rtifacts/
 
+# Local build caches (do not commit)
+.utmp/
+
 # User-specific
 [Uu]ser[Ss]ettings/
 .vs/

@@ -1,24 +1,25 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼é ˜åŸŸã¨ã®æ¥è§¦ã‚’æ¤œçŸ¥ã—ã€ãƒ›ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³ã¸æˆ»ã™ãƒˆãƒªã‚¬ãƒ¼ã€‚
 public class GameOver : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        // ‚Ç‚ñ‚ÈƒIƒuƒWƒFƒNƒg‚ªÚG‚µ‚½‚©ƒƒO‚Éo—Í‚·‚é
-        Debug.Log("ƒgƒŠƒK[‚ÉÚGI ƒIƒuƒWƒFƒNƒg–¼: " + other.name + ", ƒ^ƒO: " + other.tag);
+        // ã©ã‚“ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæ¥è§¦ã—ãŸã‹ãƒ­ã‚°ã«å‡ºåŠ›ã™ã‚‹
+        Debug.Log("ãƒˆãƒªã‚¬ãƒ¼ã«æ¥è§¦ï¼ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå: " + other.name + ", ã‚¿ã‚°: " + other.tag);
 
-        // ÚG‚µ‚½ƒIƒuƒWƒFƒNƒg‚Ìƒ^ƒO‚ª "Animal" ‚¾‚Á‚½‚ç
+        // æ¥è§¦ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¿ã‚°ãŒ "Animal" ã ã£ãŸã‚‰
         if (other.CompareTag("Animal"))
         {
-            Debug.Log("ƒQ[ƒ€ƒI[ƒo[I " + other.name + " ‚ª—‰º‚µ‚Ü‚µ‚½B");
+            Debug.Log("ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼ï¼ " + other.name + " ãŒè½ä¸‹ã—ã¾ã—ãŸã€‚");
             Invoke("ReturnToHome", 1f);
         }
     }
 
     void ReturnToHome()
     {
-        // ‚ ‚È‚½‚Ìƒz[ƒ€ƒV[ƒ“‚Ì–¼‘O‚É‡‚í‚¹‚Ä‚­‚¾‚³‚¢
+        // ã‚ãªãŸã®ãƒ›ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³ã®åå‰ã«åˆã‚ã›ã¦ãã ã•ã„
         SceneManager.LoadScene("Home");
     }
 }

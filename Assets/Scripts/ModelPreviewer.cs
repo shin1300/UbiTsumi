@@ -1,17 +1,18 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
+// èª­ã¿è¾¼ã‚“ã ãƒ¢ãƒ‡ãƒ«ã®ã‚¹ã‚±ãƒ¼ãƒ«èª¿æ•´ãƒ»æ•´åˆ—ãƒ»è‡ªå‹•å›è»¢ã‚’è¡Œã†ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼è¡¨ç¤ºã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã€‚
 public class ModelPreviewer : MonoBehaviour
 {
-    [Header("ƒvƒŒƒrƒ…[İ’è")]
+    [Header("ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼è¨­å®š")]
     public Transform previewParent;
-    // public GameObject wireframePrefab; // š íœ
+    // public GameObject wireframePrefab; // â˜… å‰Šé™¤
     public float modelSpacing = 2.0f;
     public float rotationSpeed = 20f;
 
     private List<GameObject> previewModels = new List<GameObject>();
-    // private List<GameObject> wireframes = new List<GameObject>(); // š íœ
+    // private List<GameObject> wireframes = new List<GameObject>(); // â˜… å‰Šé™¤
 
     void Update()
     {
@@ -33,7 +34,7 @@ public class ModelPreviewer : MonoBehaviour
 
     private void ArrangeModels()
     {
-        /* š íœ
+        /* â˜… å‰Šé™¤
         foreach (var wireframe in wireframes)
         {
             Destroy(wireframe);
@@ -64,10 +65,10 @@ public class ModelPreviewer : MonoBehaviour
             float modelWidth = modelWidths[i];
             model.transform.localPosition = new Vector3(currentX + modelWidth / 2.0f, 0, 0);
 
-            /* š íœ
+            /* â˜… å‰Šé™¤
             if (wireframePrefab != null)
             {
-                // ...ƒƒCƒ„[ƒtƒŒ[ƒ€¶¬ƒR[ƒh...
+                // ...ãƒ¯ã‚¤ãƒ¤ãƒ¼ãƒ•ãƒ¬ãƒ¼ãƒ ç”Ÿæˆã‚³ãƒ¼ãƒ‰...
             }
             */
 

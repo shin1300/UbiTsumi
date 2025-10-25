@@ -1,4 +1,5 @@
 // ファイル名: FasterFall.cs （推奨版）
+// 落下中に追加重力を与えて、落下と安定を速める補助コンポーネント。
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]

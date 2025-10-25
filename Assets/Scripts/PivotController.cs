@@ -1,22 +1,23 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.EventSystems;
 
+// ã‚«ãƒ¡ãƒ©ã®ãƒ”ãƒœãƒƒãƒˆã‚’è‡ªå‹•å›è»¢ã•ã›ã€ãƒ‰ãƒ©ãƒƒã‚°/ã‚¿ãƒƒãƒã§ã®å›è»¢æ“ä½œã‚’å—ã‘ä»˜ã‘ã‚‹ã€‚
 public class PivotController : MonoBehaviour
 {
-    [Header("ƒ†[ƒU[‘€ìİ’è")]
+    [Header("ãƒ¦ãƒ¼ã‚¶ãƒ¼æ“ä½œè¨­å®š")]
     public float rotationSpeed = 50f;
     public float yMinLimit = -10f;
     public float yMaxLimit = 60f;
 
-    [Header("©“®‰ñ“]İ’è")]
-    public float autoRotationSpeed = 45f; // ©“®‰ñ“]‚Ì‘¬‚³i“x/•bj
+    [Header("è‡ªå‹•å›è»¢è¨­å®š")]
+    public float autoRotationSpeed = 45f; // è‡ªå‹•å›è»¢ã®é€Ÿã•ï¼ˆåº¦/ç§’ï¼‰
 
     private float currentX = 0f;
     private float currentY = 0f;
 
-    // --- ’Ç‰Á‚µ‚½•Ï” ---
-    private bool isAutoRotating = true; // ©“®‰ñ“]’†‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
-    private float totalRotation = 0f;   // ‰ñ“]‚µ‚½‡ŒvŠp“x‚ğ‹L˜^
+    // --- è¿½åŠ ã—ãŸå¤‰æ•° ---
+    private bool isAutoRotating = true; // è‡ªå‹•å›è»¢ä¸­ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°
+    private float totalRotation = 0f;   // å›è»¢ã—ãŸåˆè¨ˆè§’åº¦ã‚’è¨˜éŒ²
 
     void Start()
     {
@@ -27,27 +28,27 @@ public class PivotController : MonoBehaviour
 
     void Update()
     {
-        // ¥ ©“®‰ñ“]‚Ìˆ— ¥
+        // â–¼ è‡ªå‹•å›è»¢ã®å‡¦ç† â–¼
         if (isAutoRotating)
         {
-            // 1ü‚·‚é‚Ü‚ÅY²ü‚è‚É‰ñ“]‚³‚¹‚é
+            // 1å‘¨ã™ã‚‹ã¾ã§Yè»¸å‘¨ã‚Šã«å›è»¢ã•ã›ã‚‹
             float rotationAmount = autoRotationSpeed * Time.deltaTime;
             currentY += rotationAmount;
             totalRotation += rotationAmount;
 
-            // ‰ñ“]‚ğ“K—p
+            // å›è»¢ã‚’é©ç”¨
             transform.rotation = Quaternion.Euler(currentX, currentY, 0);
 
-            // ‡Œv‰ñ“]Šp“x‚ª360“x‚ğ’´‚¦‚½‚ç©“®‰ñ“]‚ğI—¹
+            // åˆè¨ˆå›è»¢è§’åº¦ãŒ360åº¦ã‚’è¶…ãˆãŸã‚‰è‡ªå‹•å›è»¢ã‚’çµ‚äº†
             if (totalRotation >= 360f)
             {
                 isAutoRotating = false;
             }
         }
-        // ¥ ƒ†[ƒU[‘€ì‚Ìˆ— ¥
+        // â–¼ ãƒ¦ãƒ¼ã‚¶ãƒ¼æ“ä½œã®å‡¦ç† â–¼
         else
         {
-            // UI‚ğ‘€ì‚µ‚Ä‚¢‚éê‡‚Í‹“_ˆÚ“®‚µ‚È‚¢
+            // UIã‚’æ“ä½œã—ã¦ã„ã‚‹å ´åˆã¯è¦–ç‚¹ç§»å‹•ã—ãªã„
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 return;
@@ -57,14 +58,14 @@ public class PivotController : MonoBehaviour
                 return;
             }
 
-            // ƒ}ƒEƒX‘€ì
+            // ãƒã‚¦ã‚¹æ“ä½œ
             if (Input.GetMouseButton(0))
             {
                 currentY += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
                 currentX -= Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
             }
 
-            // ƒ^ƒbƒ`‘€ì
+            // ã‚¿ãƒƒãƒæ“ä½œ
             if (Input.touchCount == 1)
             {
                 Touch touch = Input.GetTouch(0);
@@ -75,10 +76,10 @@ public class PivotController : MonoBehaviour
                 }
             }
 
-            // X²‚Ì‰ñ“]‚É§ŒÀ‚ğ‚©‚¯‚é
+            // Xè»¸ã®å›è»¢ã«åˆ¶é™ã‚’ã‹ã‘ã‚‹
             currentX = Mathf.Clamp(currentX, yMinLimit, yMaxLimit);
 
-            // ‰ñ“]‚ğ“K—p
+            // å›è»¢ã‚’é©ç”¨
             transform.rotation = Quaternion.Euler(currentX, currentY, 0);
         }
     }

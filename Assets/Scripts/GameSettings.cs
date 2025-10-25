@@ -1,14 +1,15 @@
-// ƒtƒ@ƒCƒ‹–¼: GameSettings.cs
+ï»¿// ãƒ•ã‚¡ã‚¤ãƒ«å: GameSettings.cs
 
+// é¸æŠã•ã‚ŒãŸã‚²ãƒ¼ãƒ ãƒ¢ãƒ¼ãƒ‰ï¼ˆScoreAttack / VSï¼‰ã‚’ä¿æŒã™ã‚‹é™çš„è¨­å®šã‚¯ãƒ©ã‚¹ã€‚
 public static class GameSettings
 {
-    // ƒQ[ƒ€ƒ‚[ƒh‚Ìí—Ş‚ğ’è‹`
+    // ã‚²ãƒ¼ãƒ ãƒ¢ãƒ¼ãƒ‰ã®ç¨®é¡ã‚’å®šç¾©
     public enum GameMode
     {
         ScoreAttack,
         VS
     }
 
-    // ‘I‘ğ‚³‚ê‚½ƒQ[ƒ€ƒ‚[ƒh‚ğ•Û
+    // é¸æŠã•ã‚ŒãŸã‚²ãƒ¼ãƒ ãƒ¢ãƒ¼ãƒ‰ã‚’ä¿æŒ
     public static GameMode selectedMode;
 }

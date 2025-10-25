@@ -8,6 +8,7 @@ using SimpleFileBrowser;
 using UnityEngine.Android;
 using System.Threading.Tasks;
 
+// 端末からGLBモデルを読み込み、プレビューに追加するUIローダー（Android対応）。
 public class CustomModelLoader : MonoBehaviour
 {
     [Header("UI設定")]
