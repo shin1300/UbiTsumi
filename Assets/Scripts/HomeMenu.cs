@@ -1,21 +1,22 @@
-// ƒtƒ@ƒCƒ‹–¼: HomeMenu.cs
+ï»¿// ãƒ•ã‚¡ã‚¤ãƒ«å: HomeMenu.cs
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// ãƒ›ãƒ¼ãƒ ç”»é¢ã®ãƒœã‚¿ãƒ³æ“ä½œã‚’å—ã‘ä»˜ã‘ã€ãƒ¢ãƒ¼ãƒ‰é¸æŠã¨ã‚·ãƒ¼ãƒ³é·ç§»ã‚’è¡Œã†ã€‚
 public class HomeMenu : MonoBehaviour
 {
-    // uScore Attackvƒ{ƒ^ƒ“‚Éİ’è‚·‚éŠÖ”
+    // ã€ŒScore Attackã€ãƒœã‚¿ãƒ³ã«è¨­å®šã™ã‚‹é–¢æ•°
     public void OnClick_ScoreAttack()
     {
         GameSettings.selectedMode = GameSettings.GameMode.ScoreAttack;
-        SceneManager.LoadScene("GameScene"); // ƒQ[ƒ€ƒV[ƒ“–¼‚ªˆá‚¤ê‡‚ÍC³‚µ‚Ä‚­‚¾‚³‚¢
+        SceneManager.LoadScene("GameScene"); // ã‚²ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³åãŒé•ã†å ´åˆã¯ä¿®æ­£ã—ã¦ãã ã•ã„
     }
 
-    // uVS Modevƒ{ƒ^ƒ“‚Éİ’è‚·‚éŠÖ”
+    // ã€ŒVS Modeã€ãƒœã‚¿ãƒ³ã«è¨­å®šã™ã‚‹é–¢æ•°
     public void OnClick_VS()
     {
         GameSettings.selectedMode = GameSettings.GameMode.VS;
-        SceneManager.LoadScene("GameScene"); // ƒQ[ƒ€ƒV[ƒ“–¼‚ªˆá‚¤ê‡‚ÍC³‚µ‚Ä‚­‚¾‚³‚¢
+        SceneManager.LoadScene("GameScene"); // ã‚²ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³åãŒé•ã†å ´åˆã¯ä¿®æ­£ã—ã¦ãã ã•ã„
     }
 }
