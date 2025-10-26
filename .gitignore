@@ -81,3 +81,6 @@ fabric.properties
 !Packages/manifest.json
 !Packages/packages-lock.json
 
+
+# Asset Store (non-redistributable) 
+Assets/SlimUI/

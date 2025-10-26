@@ -45,3 +45,14 @@
 
 ## 📜 ライセンス
 MIT License（`LICENSE` を参照）
+
+## 🧩 SlimUI の導入（公開リポジトリ方針）
+本リポジトリには SlimUI のアセットは含めていません（Asset Store EULAに従い再配布不可のため）。
+
+SlimUI を使ったメニュー/アイコンを利用するには、各自の環境でインポートしてください。
+
+1. Unity Asset Store から「SlimUI Modern Menu 1」を取得し、プロジェクトにインポート（バージョンは任意の安定版）
+2. インポート後に `Home.unity` / `GameScene.unity` を開くと、Main_Menu などの参照が自動解決されます
+3. TextMesh Pro を使用している場合は Window > TextMeshPro > Import TMP Essential Resources も実行
+
+補足: SlimUI を含めたプレイ映像（デモ動画）の公開は可能ですが、アセット本体の再配布はできません
