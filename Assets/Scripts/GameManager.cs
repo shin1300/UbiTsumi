@@ -19,7 +19,10 @@ public class GameManager : MonoBehaviour
     [Header("物理設定")]
     public PhysicsMaterial animalPhysicMaterial;
     [Header("操作系")]
+#if JOYSTICK_PACK
+    // Joystick Pack が導入されている場合のみ有効
     public Joystick joystick;
+#endif
     public Transform cameraTransform;
     public float moveSpeed = 5f;
     [Header("カメラオブジェクト")]
@@ -71,17 +74,35 @@ public class GameManager : MonoBehaviour
 
         Vector3 moveDirection = Vector3.zero;
 
+        // 入力値（Joystick Pack が無ければキーボード/デフォルト軸を利用）
+        float h = 0f, v = 0f;
+#if JOYSTICK_PACK
+        if (joystick != null)
+        {
+            h = joystick.Horizontal;
+            v = joystick.Vertical;
+        }
+        else
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+        }
+#else
+        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Vertical");
+#endif
+
         if (mainCameraObject.activeSelf)
         {
             Vector3 camForward = cameraTransform.forward;
             Vector3 camRight = cameraTransform.right;
             camForward.y = 0;
             camRight.y = 0;
-            moveDirection = camForward.normalized * joystick.Vertical + camRight.normalized * joystick.Horizontal;
+            moveDirection = camForward.normalized * v + camRight.normalized * h;
         }
         else if (topDownCameraObject.activeSelf)
         {
-            moveDirection = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
+            moveDirection = new Vector3(h, 0, v);
         }
 
         if (moveDirection != Vector3.zero)
