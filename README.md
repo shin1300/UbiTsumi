@@ -7,7 +7,8 @@
 モバイル向けの「動物タワー風」3Dゲーム（Unity）。最小構成で起動・確認できるように整えています。
 
 ## 🎥 Demo
-![Demo](https://github.com/user-attachments/assets/ad2d3c38-0f14-4bed-9956-113ea5e775a8)
+[![Demo](docs/images/demo.gif)](https://github.com/user-attachments/assets/ad2d3c38-0f14-4bed-9956-113ea5e775a8)
+
 
 
 ## ⚡ Quick Play
