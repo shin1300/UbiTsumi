@@ -5,8 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-> **NOTE**  
-> 研究室を舞台にした「動物タワー風」3Dゲーム（Unity）。研究室にあるモノを GLB として読み込んで積んで遊べる、デモ兼ポートフォリオです。
+研究室を舞台にした「動物タワー風」3Dゲーム（Unity）。研究室にあるモノを読み込んで積んで遊べるゲームです。
 
 ---
 
@@ -16,12 +15,10 @@
 - [Quick Start](#quick-start)
 - [Features](#features)
 - [Controls](#controls)
-- [Tech Stack](#tech-stack)
 - [Build (Android)](#build-android)
 - [Folder Structure](#folder-structure)
 - [External Assets](#external-assets)
 - [License](#license)
-- [Project Status](#project-status)
 - [Author](#author)
 
 ---
@@ -29,49 +26,18 @@
 ## Demo
 [![Demo](docs/images/demo.gif)](https://github.com/user-attachments/assets/ad2d3c38-0f14-4bed-9956-113ea5e775a8)
 
-> **TIP**  
-> 画像をクリックすると GitHub 内の動画プレイヤーが開きます。再生できない場合はリンク先でダウンロードしてください。
-
 ---
 
 ## Overview
 - 研究室空間をシーン化し、**身近なモノをゲームオブジェクトとして積める**。
-- **GLB（glTF）取込対応**：Android 端末ストレージから選ぶだけでゲームに参加。
-- **視点切替**（俯瞰/肩越し）＋**安定判定→次スポーン**のテンポ重視。
-
-> **STATUS**  
-> 動作対象：Android / Unity 6000.0.48f1（URP）。シーンは `Home.unity` → `GameScene.unity`。
+- 物体スキャンは**別アプリ**で行う必要あり
 
 ---
 
 ## Quick Start
 1. Unity Hub でプロジェクトを開く  
 2. `Assets/Scenes/Home.unity` を開く  
-3. ▶ を押して実行（仮想スティック未導入でもキーボードで動作）
-
-> **TIP**  
-> Joystick Pack を未導入でもフォールバックします。操作は下記「Controls」を参照。
-
----
-
-## Features
-- **GLB 取込**：glTFast で端末から `.glb` を読み込み、スケーリング調整後にプール追加
-- **モード**：ScoreAttack（総ドロップ数） / VS（手番交代）
-- **視点/操作**：俯瞰 ↔ 肩越し、回転・リセット、仮想スティック（任意）
-- **パフォーマンス配慮**：Blender でポリゴン/テクスチャ最適化、物理は `Rigidbody/Collider/PhysicsMaterial`
-
-> **NOTE**  
-> 一部アセットは再配布不可のため各自インポートが必要です（下記「External Assets」を参照）。
-
----
-
-## Controls
-- **待機中**：仮想スティックで左右/前後移動  
-- **落下**：ボタンで投下 → 静止で安定判定 → 次スポーン  
-- **視点**：ワンタッチ切替（俯瞰 / 肩越し）
-
-> **TIP**  
-> キーボード操作の最小セットを `docs/controls.md` に記載予定。仮想スティック未導入でもテスト可能です。
+3. ▶ を押して実行
 
 ---
 
@@ -134,21 +100,7 @@ Assets/
 
 ---
 
-## Project Status
-| 項目 | 状態 |
-|--|--|
-| 開発 | Active（軽量化・UI整理を継続） |
-| テスト | Android 実機で動作確認 |
-| 今後 | GLB 取込 UX、スコア画面、ドキュメント更新 |
-
-> **STATUS**  
-> ブランチ運用：`develop`（作業）→ `main`（取り込み）。`main` は PR 必須。
-
----
-
 ## Author
 Shintaro Niwamoto / [@shin1300](https://github.com/shin1300)  
 `shintaro.niwamoto@ubi-lab.com`
 
-> **TIP**  
-> Issue / Pull Request での質問・提案歓迎です。再現手順・端末情報があると助かります。
