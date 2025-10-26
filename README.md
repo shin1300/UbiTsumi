@@ -19,11 +19,11 @@ UbiTsumi は、研究室メンバー間の技術コンペ用に開発したア�
 - **舞台:** 研究室を再現した 3D シーン  
 - **操作:** オブジェクトを落として積む  
 - **目的:** 安定させて積み上げる 
-- **拡張性:** glTFast により任意の `.glb` モデルを Android 端末から読み込める  
+- **拡張性:** 好きなものをゲームに登場させることができる  
 
 > [!Note]  
-> 実際の物体スキャンには **Polycam** などの外部アプリを使用します。  
-> UbiTsumi はそれらで作成した3Dスキャン物体を読み込み、ゲームに組み込みます。
+> 実際の物体スキャンには **Polycam** などの外部アプリを使用します
+> UbiTsumi はそれらで作成した3Dスキャン物体を読み込み、ゲームに組み込みます
 > ScoreAttack / VS モード対応機能など追加予定
 
 ---
@@ -31,7 +31,7 @@ UbiTsumi は、研究室メンバー間の技術コンペ用に開発したア�
 ## 🚀 Quick Start
 1. Unity Hub でプロジェクトを開く  
 2. `Assets/Scenes/Home.unity` を開く  
-3. ▶ を押して実行（仮想スティック未導入でもキーボード操作可）
+3. ▶ を押して実行
 
 ---
 
@@ -45,9 +45,6 @@ UbiTsumi は、研究室メンバー間の技術コンペ用に開発したア�
   - Starter Assets
 - **Physics:** Rigidbody / Collider / PhysicsMaterial  
 
-> [!Note]  
-> 各アセットの出典・ライセンス詳細は `ThirdPartyNotices.md` を参照してください。
-
 ---
 
 ## 🏗️ Build (Android)
@@ -58,7 +55,7 @@ SDK/NDK/JDK: Unity Hub 管理のものを使用
 ```
 
 > [!Tip] 
-> IL2CPP + ARM64 を推奨。`docs/build-notes.md` に詳細を追記予定です。
+> IL2CPP + ARM64 を推奨。`docs/build-notes.md` に詳細を追記予定です
 
 ---
 
@@ -75,13 +72,14 @@ Assets/
 
 ## External Assets
 - **SlimUI Modern Menu 1**（再配布不可）  
-  - 各自インポート後、`Home.unity` / `GameScene.unity` の参照が解決されます。  
+  - 各自インポート後、`Home.unity` / `GameScene.unity` の参照が解決されます。 
 - **Joystick Pack**（任意・再配布不可）  
-  - `docs/controls.md` の手順に沿って導入。
+  - `docs/controls.md` の手順に沿って導入
 
 > [!Warning]
-> ライセンス上、当リポジトリには含めていません。導入は各自のライセンス範囲で行ってください。
-> HomeSceneでは、glbファイルをアップロードしなければゲーム画面に移る際に詰まります。
+> ライセンス上、当リポジトリには含めていません
+> 導入は各自のライセンス範囲で行ってください
+> glbファイルをアップロードしなければゲーム画面遷移時に詰まります
 
 ---
 
