@@ -25,3 +25,10 @@ https://user-images.githubusercontent.com/xxxx/demo.mp4
 ```bash
 # 推奨: IL2CPP / Unity Hub 管理の SDK/NDK/JDK
 # ここに 1 コマンド or 手順 3 つ以内の最短ビルドを記載（後述 docs に詳細）
+`
+
+## Demo (inline)
+
+<video src="docs/movie/demo.mp4" controls width="640"></video>
+
+[docs/movie/demo.mp4](docs/movie/demo.mp4)
