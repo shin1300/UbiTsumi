@@ -3,65 +3,63 @@
 [![Unity](https://img.shields.io/badge/Unity-6000.0.48f1-blue?logo=unity)](#)
 ![Platform](https://img.shields.io/badge/Platform-Android-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-研究室を舞台にした「動物タワー風」3Dゲーム（Unity）。研究室にあるモノを読み込んで積んで遊べるゲームです。
-
----
-
-## Table of Contents
-- [Demo](#demo)
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Features](#features)
-- [Controls](#controls)
-- [Build (Android)](#build-android)
-- [Folder Structure](#folder-structure)
-- [External Assets](#external-assets)
-- [License](#license)
-- [Author](#author)
+Unity 製「動物タワー風」3Dゲーム。  
+研究室を舞台に、身の回りのモノを積み上げて遊べる軽量デモプロジェクトです。
 
 ---
 
-## Demo
+## 📽️ Demo
 [![Demo](docs/images/demo.gif)](https://github.com/user-attachments/assets/ad2d3c38-0f14-4bed-9956-113ea5e775a8)
 
 ---
 
-## Overview
-- 研究室空間をシーン化し、**身近なモノをゲームオブジェクトとして積める**。
-- 物体スキャンは**別アプリ**で行う必要あり
+## 🧭 Overview
+UbiTsumi は、研究室メンバー間の技術コンペ用に開発されたミニゲームです。  
+各自が研究で使う技術を題材に作品を制作する中で、  
+「身近な空間（研究室）をステージにし、実際のモノを積んで遊ぶ」ことをテーマにしています。
+
+- **舞台:** 研究室を再現した 3D シーン  
+- **操作:** 仮想スティックまたはキーボードで操作し、オブジェクトを落として積む  
+- **目的:** 安定させて積み上げる（ScoreAttack / VS モード対応）  
+- **拡張性:** glTFast により任意の `.glb` モデルを Android 端末から読み込める  
+
+> [!Note]  
+> 実際の物体スキャンには **Polycam** などの外部アプリを使用します。  
+> UbiTsumi はそれらで作成した GLB を読み込み、ゲームに組み込むためのベースです。
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 1. Unity Hub でプロジェクトを開く  
 2. `Assets/Scenes/Home.unity` を開く  
-3. ▶ を押して実行
+3. ▶ を押して実行（仮想スティック未導入でもキーボード操作可）
 
 ---
 
-## Tech Stack
-- Unity 6000.0.48f1（URP 17.x）  
-- glTFast（GLB 読み込み）  
-- SimpleFileBrowser（Android ファイル選択）  
-- TextMesh Pro（UI）  
-- Starter Assets（入力/カメラ）  
-- Physics：Rigidbody / Collider / PhysicsMaterial
+## 🧰 Tech Stack
+- **Engine:** Unity 6000.0.48f1  
+- **Runtime:** URP / IL2CPP 対応  
+- **Libraries:**  
+  - [glTFast](https://github.com/atteneder/glTFast) – GLB 読み込み  
+  - [SimpleFileBrowser](https://github.com/yasirkula/UnitySimpleFileBrowser) – Android ファイル選択  
+  - [TextMesh Pro](https://docs.unity3d.com/Packages/com.unity.textmeshpro@latest/) – UI 表示  
+  - Starter Assets（入力・カメラ制御）  
+- **Physics:** Rigidbody / Collider / PhysicsMaterial  
 
-> **NOTE**  
-> 出典・ライセンスは `ThirdPartyNotices.md` を参照してください。
+> [!Note]  
+> 各アセットの出典・ライセンス詳細は `ThirdPartyNotices.md` を参照してください。
 
 ---
 
-## Build (Android)
+## 🏗️ Build (Android)
 ```yaml
 Platform: Android
 Scripting Backend: IL2CPP（推奨） / Mono
 SDK/NDK/JDK: Unity Hub 管理のものを使用
 ```
 
-> **TIP**  
+> [!Tip] 
 > IL2CPP + ARM64 を推奨。`docs/build-notes.md` に詳細を追記予定です。
 
 ---
@@ -70,12 +68,11 @@ SDK/NDK/JDK: Unity Hub 管理のものを使用
 ```yaml
 Assets/
 ├─ Scenes/ # Home / GameScene
-├─ Scripts/ # ゲームロジック (GameManager ほか)
+├─ Scripts/ # ゲームロジック 
 ├─ Animals/ # サンプルモデル
 ├─ Plugins/ # 外部プラグイン
 └─ StarterAssets/ # 入力・カメラのベース
 ```
-
 
 > **NOTE**  
 > `.meta` は GUID 維持のため必ず保持してください。不要アセットは削除済み。
@@ -85,12 +82,12 @@ Assets/
 ## External Assets
 - **SlimUI Modern Menu 1**（再配布不可）  
   - 各自インポート後、`Home.unity` / `GameScene.unity` の参照が解決されます。  
-  - TextMesh Pro 使用時は `Window > TextMeshPro > Import TMP Essential Resources` を実行。  
 - **Joystick Pack**（任意・再配布不可）  
-  - `docs/controls.md` の手順に沿って導入。定義シンボル `JOYSTICK_PACK` を設定すると自動参照。未導入時はキーボードにフォールバック。
+  - `docs/controls.md` の手順に沿って導入。
 
-> **WARNING**  
+> [!Warning]
 > ライセンス上、当リポジトリには含めていません。導入は各自のライセンス範囲で行ってください。
+> HomeSceneでは、glbファイルをアップロードしなければゲーム画面に移る際に詰まります。
 
 ---
 
@@ -98,9 +95,5 @@ Assets/
 - MIT License（`LICENSE`）  
 - 付属アセットの出典・ライセンスは `ThirdPartyNotices.md`
 
----
 
-## Author
-Shintaro Niwamoto / [@shin1300](https://github.com/shin1300)  
-`shintaro.niwamoto@ubi-lab.com`
 
