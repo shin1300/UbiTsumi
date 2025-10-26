@@ -7,9 +7,15 @@
 モバイル向けの「動物タワー風」3Dゲーム（Unity）。最小構成で起動・確認できるように整えています。
 
 ## 🎥 Demo
-- 動画: [docs/movie/demo.mp4](docs/movie/demo.mp4)
-  - GitHubのプレビュー制限で再生できない場合はリンク先でダウンロードしてご覧ください
 
+<!-- README 上でそのまま再生（raw にするのがポイント）-->
+<video
+  src="https://raw.githubusercontent.com/shin1300/UbiTsumi/develop/docs/movie/demo.mp4"
+  controls
+  playsinline
+  muted
+  width="720">
+</video>
 ## ⚡ Quick Play
 1. Unity Hub でプロジェクトを開く
 2. シーン `Assets/Scenes/Home.unity` を開く
