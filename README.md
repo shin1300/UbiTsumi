@@ -4,8 +4,8 @@
 ![Platform](https://img.shields.io/badge/Platform-Android-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Unity 製「動物タワー風」3Dゲーム。  
-研究室を舞台に、身の回りのモノを積み上げて遊べる軽量デモプロジェクトです。
+Unity 製「動物タワー風」3Dゲーム
+研究室を舞台に、身の回りのモノを積み上げて遊べます
 
 ---
 
@@ -15,18 +15,16 @@ Unity 製「動物タワー風」3Dゲーム。
 ---
 
 ## 🧭 Overview
-UbiTsumi は、研究室メンバー間の技術コンペ用に開発されたミニゲームです。  
-各自が研究で使う技術を題材に作品を制作する中で、  
-「身近な空間（研究室）をステージにし、実際のモノを積んで遊ぶ」ことをテーマにしています。
-
+UbiTsumi は、研究室メンバー間の技術コンペ用に開発したアンドロイドゲームです 
 - **舞台:** 研究室を再現した 3D シーン  
-- **操作:** 仮想スティックまたはキーボードで操作し、オブジェクトを落として積む  
-- **目的:** 安定させて積み上げる（ScoreAttack / VS モード対応）  
+- **操作:** オブジェクトを落として積む  
+- **目的:** 安定させて積み上げる 
 - **拡張性:** glTFast により任意の `.glb` モデルを Android 端末から読み込める  
 
 > [!Note]  
 > 実際の物体スキャンには **Polycam** などの外部アプリを使用します。  
-> UbiTsumi はそれらで作成した GLB を読み込み、ゲームに組み込むためのベースです。
+> UbiTsumi はそれらで作成した3Dスキャン物体を読み込み、ゲームに組み込みます。
+> ScoreAttack / VS モード対応機能など追加予定
 
 ---
 
@@ -44,7 +42,7 @@ UbiTsumi は、研究室メンバー間の技術コンペ用に開発された�
   - [glTFast](https://github.com/atteneder/glTFast) – GLB 読み込み  
   - [SimpleFileBrowser](https://github.com/yasirkula/UnitySimpleFileBrowser) – Android ファイル選択  
   - [TextMesh Pro](https://docs.unity3d.com/Packages/com.unity.textmeshpro@latest/) – UI 表示  
-  - Starter Assets（入力・カメラ制御）  
+  - Starter Assets
 - **Physics:** Rigidbody / Collider / PhysicsMaterial  
 
 > [!Note]  
@@ -55,7 +53,7 @@ UbiTsumi は、研究室メンバー間の技術コンペ用に開発された�
 ## 🏗️ Build (Android)
 ```yaml
 Platform: Android
-Scripting Backend: IL2CPP（推奨） / Mono
+Scripting Backend: IL2CPP / Mono
 SDK/NDK/JDK: Unity Hub 管理のものを使用
 ```
 
@@ -73,10 +71,6 @@ Assets/
 ├─ Plugins/ # 外部プラグイン
 └─ StarterAssets/ # 入力・カメラのベース
 ```
-
-> **NOTE**  
-> `.meta` は GUID 維持のため必ず保持してください。不要アセットは削除済み。
-
 ---
 
 ## External Assets
