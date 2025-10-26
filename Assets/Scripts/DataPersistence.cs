@@ -1,3 +1,4 @@
+// 軽量な永続データ（カスタムモデルのパス等）をシーン間で保持するシングルトン。
 using System.Collections.Generic;
 using UnityEngine;
 

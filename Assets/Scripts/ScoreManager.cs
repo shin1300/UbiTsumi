@@ -1,47 +1,48 @@
-// ƒtƒ@ƒCƒ‹–¼: ScoreManager.cs
+ï»¿// ãƒ•ã‚¡ã‚¤ãƒ«å: ScoreManager.cs
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
+// ãƒã‚¤ã‚¹ã‚³ã‚¢ã‚’ PlayerPrefs ã«ä¿å­˜ãƒ»å–å¾—ã™ã‚‹ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ï¼ˆæœ€å¤§5ä»¶ï¼‰ã€‚
 public static class ScoreManager
 {
-    private const string HighScoresKey = "HighScores"; // PlayerPrefs‚Åg‚¤ƒL[
-    private const int MaxScores = 5; // ƒ‰ƒ“ƒLƒ“ƒO‚É•Û‘¶‚·‚éÅ‘å”
+    private const string HighScoresKey = "HighScores"; // PlayerPrefsã§ä½¿ã†ã‚­ãƒ¼
+    private const int MaxScores = 5; // ãƒ©ãƒ³ã‚­ãƒ³ã‚°ã«ä¿å­˜ã™ã‚‹æœ€å¤§æ•°
 
-    // V‚µ‚¢ƒXƒRƒA‚ğ’Ç‰Á‚·‚éŠÖ”
+    // æ–°ã—ã„ã‚¹ã‚³ã‚¢ã‚’è¿½åŠ ã™ã‚‹é–¢æ•°
     public static void AddScore(int newScore)
     {
-        // Šù‘¶‚ÌƒXƒRƒA‚ğ“Ç‚İ‚Şi‚È‚¯‚ê‚Î‹ó‚Ì•¶š—ñj
+        // æ—¢å­˜ã®ã‚¹ã‚³ã‚¢ã‚’èª­ã¿è¾¼ã‚€ï¼ˆãªã‘ã‚Œã°ç©ºã®æ–‡å­—åˆ—ï¼‰
         string scoresString = PlayerPrefs.GetString(HighScoresKey, "");
         List<int> scores = new List<int>();
 
         if (!string.IsNullOrEmpty(scoresString))
         {
-            // •¶š—ñ‚ğ•ªŠ„‚µ‚ÄƒŠƒXƒg‚É•ÏŠ·
+            // æ–‡å­—åˆ—ã‚’åˆ†å‰²ã—ã¦ãƒªã‚¹ãƒˆã«å¤‰æ›
             scores = scoresString.Split(',').Select(int.Parse).ToList();
         }
 
-        // V‚µ‚¢ƒXƒRƒA‚ğ’Ç‰Á
+        // æ–°ã—ã„ã‚¹ã‚³ã‚¢ã‚’è¿½åŠ 
         scores.Add(newScore);
 
-        // ƒXƒRƒA‚ğ~‡i‘å‚«‚¢‡j‚É•À‚Ñ‘Ö‚¦AãˆÊ5Œ‚¾‚¯‚ğc‚·
+        // ã‚¹ã‚³ã‚¢ã‚’é™é †ï¼ˆå¤§ãã„é †ï¼‰ã«ä¸¦ã³æ›¿ãˆã€ä¸Šä½5ä»¶ã ã‘ã‚’æ®‹ã™
         List<int> sortedScores = scores.OrderByDescending(s => s).Take(MaxScores).ToList();
 
-        // ƒŠƒXƒg‚ğƒJƒ“ƒ}‹æØ‚è‚Ì•¶š—ñ‚É–ß‚·
+        // ãƒªã‚¹ãƒˆã‚’ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã®æ–‡å­—åˆ—ã«æˆ»ã™
         string newScoresString = string.Join(",", sortedScores);
 
-        // PlayerPrefs‚É•Û‘¶
+        // PlayerPrefsã«ä¿å­˜
         PlayerPrefs.SetString(HighScoresKey, newScoresString);
-        PlayerPrefs.Save(); // •ÏX‚ğƒfƒBƒXƒN‚É‘‚«‚Ş
+        PlayerPrefs.Save(); // å¤‰æ›´ã‚’ãƒ‡ã‚£ã‚¹ã‚¯ã«æ›¸ãè¾¼ã‚€
     }
 
-    // •Û‘¶‚³‚ê‚Ä‚¢‚éƒXƒRƒA‚ğƒŠƒXƒg‚Æ‚µ‚Äæ“¾‚·‚éŠÖ”
+    // ä¿å­˜ã•ã‚Œã¦ã„ã‚‹ã‚¹ã‚³ã‚¢ã‚’ãƒªã‚¹ãƒˆã¨ã—ã¦å–å¾—ã™ã‚‹é–¢æ•°
     public static List<int> GetScores()
     {
         string scoresString = PlayerPrefs.GetString(HighScoresKey, "");
         if (string.IsNullOrEmpty(scoresString))
         {
-            return new List<int>(); // ƒXƒRƒA‚ª‚È‚¯‚ê‚Î‹ó‚ÌƒŠƒXƒg‚ğ•Ô‚·
+            return new List<int>(); // ã‚¹ã‚³ã‚¢ãŒãªã‘ã‚Œã°ç©ºã®ãƒªã‚¹ãƒˆã‚’è¿”ã™
         }
 
         return scoresString.Split(',').Select(int.Parse).ToList();
