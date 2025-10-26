@@ -8,14 +8,8 @@
 
 ## 🎥 Demo
 
-<!-- README 上でそのまま再生（raw にするのがポイント）-->
-<video
-  src="https://raw.githubusercontent.com/shin1300/UbiTsumi/develop/docs/movie/demo.mp4"
-  controls
-  playsinline
-  muted
-  width="720">
-</video>
+![Demo](https://raw.githubusercontent.com/shin1300/UbiTsumi/develop/docs/movie/demo.mp4)
+
 ## ⚡ Quick Play
 1. Unity Hub でプロジェクトを開く
 2. シーン `Assets/Scenes/Home.unity` を開く
