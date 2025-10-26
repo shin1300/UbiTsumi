@@ -1,47 +1,47 @@
-# UbiTsumi
+ï»¿# UbiTsumi ğŸ¾
 
-ƒ‚ƒoƒCƒ‹Œü‚¯‚Ìu“®•¨ƒ^ƒ[•—v3DƒQ[ƒ€iUnityjBÅ¬\¬‚Å‹N“®EŠm”F‚Å‚«‚é‚æ‚¤‚É®‚¦‚Ä‚¢‚Ü‚·B
+[![Unity](https://img.shields.io/badge/Unity-6000.0.48f1-blue?logo=unity)](#)
+![Platform](https://img.shields.io/badge/Platform-Android-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## ŠT—v
-- ƒvƒŒƒC: `Assets/Scenes/Home.unity` ‚©‚çÄ¶i‰¼‘zƒWƒ‡ƒCƒXƒeƒBƒbƒN‘Î‰j
-- ƒQ[ƒ€: “®•¨/ƒIƒuƒWƒFƒNƒg‚ğÏ‚İã‚°‚ÄˆÀ’è‚³‚¹‚é
-- ƒJƒXƒ^ƒ€ƒ‚ƒfƒ‹: GLB “Ç‚İ‚İ‚É‘Î‰iglTFast + SimpleFileBrowserj
+ãƒ¢ãƒã‚¤ãƒ«å‘ã‘ã®ã€Œå‹•ç‰©ã‚¿ãƒ¯ãƒ¼é¢¨ã€3Dã‚²ãƒ¼ãƒ ï¼ˆUnityï¼‰ã€‚æœ€å°æ§‹æˆã§èµ·å‹•ãƒ»ç¢ºèªã§ãã‚‹ã‚ˆã†ã«æ•´ãˆã¦ã„ã¾ã™ã€‚
 
-## ƒfƒ‚
-- “®‰æ: docs/movie/demo.mp4
+## ğŸ¥ Demo
+- å‹•ç”»: [docs/movie/demo.mp4](docs/movie/demo.mp4)
+  - GitHubã®ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼åˆ¶é™ã§å†ç”Ÿã§ããªã„å ´åˆã¯ãƒªãƒ³ã‚¯å…ˆã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¦ã”è¦§ãã ã•ã„
 
-## ‹N“®è‡iŠJ”­j
-1. Unity Hub ‚ÅƒvƒƒWƒFƒNƒg‚ğŠJ‚­
-2. ƒV[ƒ“ `Assets/Scenes/Home.unity` ‚ğŠJ‚­
-3. Ä¶ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·
+## âš¡ Quick Play
+1. Unity Hub ã§ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’é–‹ã
+2. ã‚·ãƒ¼ãƒ³ `Assets/Scenes/Home.unity` ã‚’é–‹ã
+3. å†ç”Ÿãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ï¼ˆä»®æƒ³ã‚¸ãƒ§ã‚¤ã‚¹ãƒ†ã‚£ãƒƒã‚¯å¯¾å¿œï¼‰
 
-## Android ƒrƒ‹ƒhiŠÈˆÕj
+## ğŸ“¦ Quick Build (Android)
 - Platform: Android
-- Scripting Backend: IL2CPPi„§j/ Mono
-- SDK/NDK/JDK: Unity Hub ŠÇ—‚Ì‚à‚Ì‚ğ„§
+- Scripting Backend: IL2CPPï¼ˆæ¨å¥¨ï¼‰/ Mono
+- SDK/NDK/JDK: Unity Hub ç®¡ç†ã®ã‚‚ã®ã‚’æ¨å¥¨
 
-## ƒtƒHƒ‹ƒ_\¬i”²ˆj
-- `Assets/Scenes` ƒV[ƒ“iHome / GameScenej
-- `Assets/Scripts` ƒQ[ƒ€ƒƒWƒbƒNiGameManager ‚Ù‚©j
-- `Assets/Animals` ƒ‚ƒfƒ‹—Şi•K—vÅ’áŒÀ‚Ì‚İj
-- `Assets/Plugins` ŠO•”ƒvƒ‰ƒOƒCƒ“iSimpleFileBrowser “™j
-- `Assets/StarterAssets` “ü—Í/ƒJƒƒ‰“™‚ÌƒXƒ^[ƒ^[ƒAƒZƒbƒgiGameScene ‚ÅQÆ‚ ‚èj
+## ğŸ“ ãƒ•ã‚©ãƒ«ãƒ€æ§‹æˆï¼ˆæŠœç²‹ï¼‰
+- `Assets/Scenes` ã‚·ãƒ¼ãƒ³ï¼ˆHome / GameSceneï¼‰
+- `Assets/Scripts` ã‚²ãƒ¼ãƒ ãƒ­ã‚¸ãƒƒã‚¯ï¼ˆGameManager ã»ã‹ï¼‰
+- `Assets/Animals` ãƒ¢ãƒ‡ãƒ«é¡ï¼ˆå¿…è¦æœ€ä½é™ã®ã¿ï¼‰
+- `Assets/Plugins` å¤–éƒ¨ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ï¼ˆSimpleFileBrowser ç­‰ï¼‰
+- `Assets/StarterAssets` å…¥åŠ›/ã‚«ãƒ¡ãƒ©ç­‰ã®ã‚¹ã‚¿ãƒ¼ã‚¿ãƒ¼ã‚¢ã‚»ãƒƒãƒˆï¼ˆGameScene ã§å‚ç…§ã‚ã‚Šï¼‰
 
-## ˆË‘¶ƒAƒZƒbƒgiå—vj
-- glTFastiGLB“Çj
-- SimpleFileBrowseriAndroid ƒtƒ@ƒCƒ‹‘I‘ğj
-- Joystick Packi‰¼‘zƒWƒ‡ƒCƒXƒeƒBƒbƒNj
+## ğŸ”— ä¾å­˜ã‚¢ã‚»ãƒƒãƒˆï¼ˆä¸»è¦ï¼‰
+- glTFastï¼ˆGLBèª­ã¿è¾¼ã¿ï¼‰
+- SimpleFileBrowserï¼ˆAndroid ãƒ•ã‚¡ã‚¤ãƒ«é¸æŠï¼‰
+- Joystick Packï¼ˆä»®æƒ³ã‚¸ãƒ§ã‚¤ã‚¹ãƒ†ã‚£ãƒƒã‚¯ï¼‰
 - TextMesh Pro
 - UCLA Game Lab Wireframe Shader
 
-Ú×‚Èo“T‚Æƒ‰ƒCƒZƒ“ƒX‚Í `ThirdPartyNotices.md` ‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+è©³ç´°ãªå‡ºå…¸ã¨ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã¯ `ThirdPartyNotices.md` ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-## –½–¼‹K‘¥‚ÆƒfƒBƒŒƒNƒgƒŠ\¬iƒKƒCƒhj
-- Scenes: `Home.unity`i‹N“®—pj/ `GameScene.unity`i–{•Òj
-- Scripts: ƒNƒ‰ƒX/ƒtƒ@ƒCƒ‹–¼‚ÍƒpƒXƒJƒ‹ƒP[ƒXi—á: `GameManager`, `DataPersistence`jB—p“r•Ê‚ÉƒTƒuƒtƒHƒ‹ƒ_‰ÂBæ“ª‚É1s‚ÌŠT—vƒRƒƒ“ƒg‚ğ•t—^
-- Animals: Œy—ÊƒTƒ“ƒvƒ‹‚Ì‚İí”õB‘å—e—Ê‚Í Git LFS ŠÇ—i`.gitattributes` Ïj‚â”CˆÓ“±“ü‚É—¯‚ß‚é
-- Plugins: ŠO•”ƒvƒ‰ƒOƒCƒ“‚Ì‚İ”z’uB©ìƒR[ƒh‚Í `Assets/Scripts` ‚É’u‚­
-- .metai‰^—p—v“_j: c‚·ƒAƒZƒbƒg‚Í `.meta` •K{iGUIDˆÛjBíœ‚Í“¯ŠK‘w‚Ì `.meta` ‚à“¯‚ÉíœB‰ü–¼/ˆÚ“®‚Í Unity ƒGƒfƒBƒ^ã‚ÅÀ{
+## ğŸ§­ å‘½åè¦å‰‡ã¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæ§‹æˆï¼ˆã‚¬ã‚¤ãƒ‰ï¼‰
+- Scenes: `Home.unity`ï¼ˆèµ·å‹•ï¼‰ / `GameScene.unity`ï¼ˆæœ¬ç·¨ï¼‰
+- Scripts: ã‚¯ãƒ©ã‚¹/ãƒ•ã‚¡ã‚¤ãƒ«åã¯ãƒ‘ã‚¹ã‚«ãƒ«ã‚±ãƒ¼ã‚¹ï¼ˆä¾‹: `GameManager`, `DataPersistence`ï¼‰ã€‚ç”¨é€”åˆ¥ã«ã‚µãƒ–ãƒ•ã‚©ãƒ«ãƒ€å¯ã€‚å…ˆé ­ã«1è¡Œã®æ¦‚è¦ã‚³ãƒ¡ãƒ³ãƒˆã‚’ä»˜ä¸
+- Animals: è»½é‡ã‚µãƒ³ãƒ—ãƒ«ã®ã¿å¸¸å‚™ã€‚å¤§å®¹é‡ã¯ Git LFS ç®¡ç†ã‚„ä»»æ„å°å…¥ã«ç•™ã‚ã‚‹
+- Plugins: å¤–éƒ¨ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã¿é…ç½®ã€‚è‡ªä½œã‚³ãƒ¼ãƒ‰ã¯ `Assets/Scripts` ã«ç½®ã
+- .metaï¼ˆé‹ç”¨è¦ç‚¹ï¼‰: æ®‹ã™ã‚¢ã‚»ãƒƒãƒˆã¯ `.meta` å¿…é ˆï¼ˆGUIDç¶­æŒï¼‰ã€‚å‰Šé™¤æ™‚ã¯åŒéšå±¤ã® `.meta` ã‚‚åŒæ™‚ã«å‰Šé™¤ã€‚æ”¹å/ç§»å‹•ã¯ Unity ã‚¨ãƒ‡ã‚£ã‚¿ä¸Šã§å®Ÿæ–½
 
-## ƒ‰ƒCƒZƒ“ƒX
-MIT Licensei`LICENSE` ‚ğQÆj
+## ğŸ“œ ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
+MIT Licenseï¼ˆ`LICENSE` ã‚’å‚ç…§ï¼‰
