@@ -9,7 +9,7 @@
 ## 🎥 Demo
 
 <video
-  src="https://raw.githubusercontent.com/shin1300/UbiTsumi/develop/docs/movie/demo.mov"
+  src="https://raw.githubusercontent.com/shin1300/UbiTsumi/develop/docs/movie/demo.mp4"
   controls
   playsinline
   muted
@@ -74,4 +74,4 @@
 - 付属アセットの出典・ライセンスは `ThirdPartyNotices.md` を参照
 
 ---
-補足：動画プレビューはファイルサイズにより GitHub 上で再生できない場合があります。`docs/movie/demo.mov` をローカル再生するか、軽量プレビュー動画を用意してください。
+補足：動画プレビューはファイルサイズにより GitHub 上で再生できない場合があります。`docs/movie/demo.mp4` をローカル再生するか、軽量プレビュー動画を用意してください。
