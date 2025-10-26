@@ -27,8 +27,3 @@ https://user-images.githubusercontent.com/xxxx/demo.mp4
 # 縺薙％縺ｫ 1 繧ｳ繝槭Φ繝・or 謇矩・3 縺､莉･蜀・・譛遏ｭ繝薙Ν繝峨ｒ險倩ｼ会ｼ亥ｾ瑚ｿｰ docs 縺ｫ隧ｳ邏ｰ・・
 `
 
-## Demo (inline)
-
-<video controls width="640"><source src="https://github.com/shin1300/UbiTsumi/raw/develop/docs/movie/demo.mp4" type="video/mp4" /></video>
-
-[docs/movie/demo.mp4](docs/movie/demo.mp4)
