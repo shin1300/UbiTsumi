@@ -8,6 +8,8 @@
 ## 🎥 Demo
 <!-- A: GitHubにMP4を直接（編集画面へドラッグ&ドロップでURLが入る） -->
 https://user-images.githubusercontent.com/xxxx/demo.mp4
+
+ローカル版（リポジトリ内）: [docs/movie/demo.mp4](docs/movie/demo.mp4)
 <!-- B: YouTube版（軽量）
 [![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtu.be/VIDEO_ID)
 -->
